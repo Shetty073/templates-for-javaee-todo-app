@@ -121,6 +121,7 @@ footer {
     display: block;
 }
 
+
 /* List page */
 .mytodolist {
     margin: auto !important;
@@ -142,6 +143,27 @@ footer {
 #newtodoitem {
     width: 100%;
 }
+
+.todolist-item-complete {
+    flex-wrap: wrap;
+    display: block;
+}
+
+
+/* Add new todo */
+.btnsrow {
+    padding: 10px;
+}
+
+.rowbtn {
+    margin-right: 8px;
+}
+
+.dashed-primary-hr {
+    border-top: 1px dashed var(--bootstrap-primary);
+}
+
+
 
 
 /* For mobile screens */

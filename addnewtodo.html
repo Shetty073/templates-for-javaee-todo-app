@@ -41,24 +41,25 @@
             <div class="todocard">
                 <div class="card mytodolist" style="width: 18rem; border: 1px solid var(--bootstrap-primary);">
                     <div class="card-header bootstrap-primary-bgcolor" style="color: white;">
-                        Todo list title
-                        <button class="btn btn-primary" style="padding: 0; float: right; border-radius: 5px;" onclick="deleteThisTodo()">
-                            <img src="./static/icons/delete_forever-white-18dp.svg" style="border: 1px dashed white; border-radius: 5px; padding: 5px;">
-                        </button>
+                        Create a new todo list
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item todolist-item-complete" id="">Tryout mongodb</li>
-                        <li class="list-group-item todolist-item-complete" id="">Complete backend design</li>
-                        <li class="list-group-item todolist-item-complete" id="">Something new</li>
-                    </ul>
-                    <div class="row">
-                        <div class="col-2" id="addnewtodobtn">
-                            <input type="button" value="+" class="btn btn-primary" id="addbtn" onclick="addNewTodoItem()" aria-label="Button for adding new todo item">
+                    <form class="container" method="" action="">
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Todo list title">
                         </div>
-                        <div class="col-10" id="addnewtodoinput">
-                            <input type="text" id="newtodoitem" class="form-control" aria-label="Text input with button">
+                        <hr class="dashed-primary-hr">
+                        <div class="input-group mb-3 list-btn-txtbox" id="list-btn-txtbox1">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-primary rowbtn addnewtextfieldbtn" id="addnewtextfieldbtn1" onclick="addAnotherListBtnTextBox()">+</button>
+                            </div>
+                            <input type="text" class="form-control formGroupExampleInput" id="formGroupExampleInput1" placeholder="Add item">
                         </div>
-                    </div>
+                        <div class="row btnsrow">
+                            <button class="btn btn-primary rowbtn" id="savetodolistbtn" onclick="saveTodoList()">Save</button>
+                            <button class="btn btn-primary rowbtn" id="cancelandgoback" onclick="cancel()">Cancel</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
